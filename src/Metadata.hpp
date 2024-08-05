@@ -7,7 +7,7 @@ class Metadata {
     public:
         Metadata();
 
-        Metadata(std::string i, int mr, int mg, int mb, int sr, int sg, int sb);
+        Metadata(std::string i, double mr, double mg, double mb, double sr, double sg, double sb);
 
         Metadata(const Metadata& other);
 

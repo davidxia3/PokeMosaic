@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o.d"
+  "CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o.d"
   "CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o"
   "CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o.d"
   "CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o"

@@ -111,11 +111,41 @@ CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidxia143/Documents/projects/PokeMosaic/src/Metadata.cpp -o CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.s
 
+CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o: CMakeFiles/PokeMosaic.dir/flags.make
+CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o: /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTree.cpp
+CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o: CMakeFiles/PokeMosaic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o -MF CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o.d -o CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTree.cpp
+
+CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTree.cpp > CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.i
+
+CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTree.cpp -o CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.s
+
+CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o: CMakeFiles/PokeMosaic.dir/flags.make
+CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o: /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTreeNode.cpp
+CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o: CMakeFiles/PokeMosaic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o -MF CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o.d -o CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTreeNode.cpp
+
+CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTreeNode.cpp > CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.i
+
+CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTreeNode.cpp -o CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.s
+
 # Object files for target PokeMosaic
 PokeMosaic_OBJECTS = \
 "CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o" \
 "CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o" \
-"CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o"
+"CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o" \
+"CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o" \
+"CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o"
 
 # External object files for target PokeMosaic
 PokeMosaic_EXTERNAL_OBJECTS =
@@ -123,6 +153,8 @@ PokeMosaic_EXTERNAL_OBJECTS =
 PokeMosaic: CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o
 PokeMosaic: CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o
 PokeMosaic: CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o
+PokeMosaic: CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o
+PokeMosaic: CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o
 PokeMosaic: CMakeFiles/PokeMosaic.dir/build.make
 PokeMosaic: /opt/homebrew/Cellar/opencv/4.10.0_1/lib/libopencv_gapi.4.10.0.dylib
 PokeMosaic: /opt/homebrew/Cellar/opencv/4.10.0_1/lib/libopencv_stitching.4.10.0.dylib
@@ -181,7 +213,7 @@ PokeMosaic: /opt/homebrew/Cellar/opencv/4.10.0_1/lib/libopencv_photo.4.10.0.dyli
 PokeMosaic: /opt/homebrew/Cellar/opencv/4.10.0_1/lib/libopencv_imgproc.4.10.0.dylib
 PokeMosaic: /opt/homebrew/Cellar/opencv/4.10.0_1/lib/libopencv_core.4.10.0.dylib
 PokeMosaic: CMakeFiles/PokeMosaic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PokeMosaic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable PokeMosaic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PokeMosaic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,7 +6,7 @@ Pixel::Pixel() {
     blue = 0;
 }
 
-Pixel::Pixel(int r, int g, int b) {
+Pixel::Pixel(double r, double g, double b) {
     red = r;
     green = g;
     blue = b;
@@ -30,27 +30,27 @@ Pixel& Pixel::operator=(const Pixel& other) {
 }
 
 
-void Pixel::set_r(int r) {
+void Pixel::set_r(double r) {
     red = r;
 }
 
-void Pixel::set_g(int g) {
+void Pixel::set_g(double g) {
     green = g;
 }
 
-void Pixel::set_b(int b) {
+void Pixel::set_b(double b) {
     blue = b;
 }
 
-int Pixel::get_r() const {
+double Pixel::get_r() const {
     return red;
 }
 
-int Pixel::get_g() const {
+double Pixel::get_g() const {
     return green;
 }
 
-int Pixel::get_b() const {
+double Pixel::get_b() const {
     return blue;
 }
 

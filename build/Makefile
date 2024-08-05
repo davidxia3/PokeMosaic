@@ -129,6 +129,54 @@ PokeMosaic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/build
 .PHONY : PokeMosaic/fast
 
+src/KDTree.o: src/KDTree.cpp.o
+.PHONY : src/KDTree.o
+
+# target to build an object file
+src/KDTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o
+.PHONY : src/KDTree.cpp.o
+
+src/KDTree.i: src/KDTree.cpp.i
+.PHONY : src/KDTree.i
+
+# target to preprocess a source file
+src/KDTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.i
+.PHONY : src/KDTree.cpp.i
+
+src/KDTree.s: src/KDTree.cpp.s
+.PHONY : src/KDTree.s
+
+# target to generate assembly for a file
+src/KDTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.s
+.PHONY : src/KDTree.cpp.s
+
+src/KDTreeNode.o: src/KDTreeNode.cpp.o
+.PHONY : src/KDTreeNode.o
+
+# target to build an object file
+src/KDTreeNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o
+.PHONY : src/KDTreeNode.cpp.o
+
+src/KDTreeNode.i: src/KDTreeNode.cpp.i
+.PHONY : src/KDTreeNode.i
+
+# target to preprocess a source file
+src/KDTreeNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.i
+.PHONY : src/KDTreeNode.cpp.i
+
+src/KDTreeNode.s: src/KDTreeNode.cpp.s
+.PHONY : src/KDTreeNode.s
+
+# target to generate assembly for a file
+src/KDTreeNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.s
+.PHONY : src/KDTreeNode.cpp.s
+
 src/Metadata.o: src/Metadata.cpp.o
 .PHONY : src/Metadata.o
 
@@ -210,6 +258,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PokeMosaic"
+	@echo "... src/KDTree.o"
+	@echo "... src/KDTree.i"
+	@echo "... src/KDTree.s"
+	@echo "... src/KDTreeNode.o"
+	@echo "... src/KDTreeNode.i"
+	@echo "... src/KDTreeNode.s"
 	@echo "... src/Metadata.o"
 	@echo "... src/Metadata.i"
 	@echo "... src/Metadata.s"

@@ -6,7 +6,7 @@ Metadata::Metadata() {
     std_pixel = Pixel(1000,1000,1000);
 }
 
-Metadata::Metadata(std::string i, int mr, int mg, int mb, int sr, int sg, int sb) {
+Metadata::Metadata(std::string i, double mr, double mg, double mb, double sr, double sg, double sb) {
     id = i;
     mean_pixel = Pixel(mr, mg, mb);
     std_pixel = Pixel(sr, sg, sb);
