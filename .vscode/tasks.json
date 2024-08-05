@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/src/image.cpp",
+                "-o",
+                "${workspaceFolder}/bin/image",
+                "-I/opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4",
+                "-I/opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4/opencv2",
+                "-L/opt/homebrew/Cellar/opencv/4.10.0_1/lib",
+                "-lopencv_core", "-lopencv_imgcodecs",
+                "-lopencv_highgui", "-lopencv_imgproc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$clang++"]
+        }
+    ]
+}
