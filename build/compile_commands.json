@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/src/Mosaic.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/src/Mosaic.cpp",
+  "output": "CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/src/Pixel.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/src/Pixel.cpp",
+  "output": "CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/src/Metadata.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/src/Metadata.cpp",
+  "output": "CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o"
+}
+]
