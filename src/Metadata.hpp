@@ -24,8 +24,9 @@ class Metadata {
         void set_id(std::string i);
         
         std::string get_id() const;
-    
 
+        friend std::ostream& operator<<(std::ostream& os, const Metadata& Metadata);
+    
     private:
         std::string id;
         Pixel mean_pixel;

@@ -54,3 +54,7 @@ double Pixel::get_b() const {
     return blue;
 }
 
+std::ostream& operator<<(std::ostream& os, const Pixel& pixel) {
+    os << "Pixel(r: " << pixel.get_r() << ", g: " << pixel.get_g() << ", b: " << pixel.get_b() << ")";
+    return os;
+}

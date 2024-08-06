@@ -1,6 +1,5 @@
 #include <opencv2/opencv.hpp>
-#include "Pixel.hpp"
-#include "Metadata.hpp"
+#include "KDTree.hpp"
 #include "../include/json.hpp"
 #include <vector>
 #include <iostream>
@@ -45,19 +44,25 @@ int main() {
             json j;
             input_file >> j;
 
-            std::string fileName = entry.path().filename().string();
-            int mr = j.value("mean_r", 1000); 
-            int mg = j.value("mean_g", 1000);
-            int mb = j.value("mean_b", 1000);
-            int sr = j.value("std_r", 1000);
-            int sg = j.value("std_g", 1000);
-            int sb = j.value("std_b", 1000);
-
-            metadataList[count++] = Metadata(fileName, mr, mg, mb, sr, sg, sb);
+            std::string id = j["id"];
+            double mr = j["mean_r"]; 
+            double mg = j["mean_g"];
+            double mb = j["mean_b"];
+            double sr = j["std_r"];
+            double sg = j["std_g"];
+            double sb = j["std_b"];
+            
+            metadataList[count++] = Metadata(id, mr, mg, mb, sr, sg, sb);
         }
     }
+    std::cout << count << std::endl;
 
     std::cout << metadataList[0].get_id();
+
+
+    KDTree tree();
+
+
 
     
 

@@ -1,6 +1,8 @@
 #ifndef PIXEL_HPP
 #define PIXEL_HPP
 
+#include <iostream>
+
 class Pixel {
     public:
         Pixel();
@@ -18,7 +20,7 @@ class Pixel {
         double get_g() const;
         double get_b() const;
 
-
+        friend std::ostream& operator<<(std::ostream& os, const Pixel& pixel);
 
     private:
         double red;

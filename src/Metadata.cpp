@@ -52,4 +52,9 @@ std::string Metadata::get_id() const {
     return id;
 }
 
+std::ostream& operator<<(std::ostream& os, const Metadata& metadata) {
+    os << "Metadata(id: " << metadata.get_id() << ", Mean " << metadata.get_mean_pixel() << ", STD " << metadata.get_std_pixel() << ")";
+    return os;
+}
+
 

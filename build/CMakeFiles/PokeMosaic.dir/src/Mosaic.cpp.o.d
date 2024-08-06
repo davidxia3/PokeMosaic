@@ -855,8 +855,10 @@ CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o: \
   /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4/opencv2/video.hpp \
   /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4/opencv2/video/tracking.hpp \
   /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/davidxia143/Documents/projects/PokeMosaic/src/Pixel.hpp \
+  /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTree.hpp \
+  /Users/davidxia143/Documents/projects/PokeMosaic/src/KDTreeNode.hpp \
   /Users/davidxia143/Documents/projects/PokeMosaic/src/Metadata.hpp \
+  /Users/davidxia143/Documents/projects/PokeMosaic/src/Pixel.hpp \
   /Users/davidxia143/Documents/projects/PokeMosaic/src/../include/json.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/valarray \
