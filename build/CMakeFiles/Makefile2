@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /Users/davidxia143/Documents/projects/PokeMosaic/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PokeMosaic.dir/all
+all: CMakeFiles/Mosaic.dir/all
+all: CMakeFiles/PixelMatching.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PokeMosaic.dir/clean
+clean: CMakeFiles/Mosaic.dir/clean
+clean: CMakeFiles/PixelMatching.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PokeMosaic.dir
+# Target rules for target CMakeFiles/Mosaic.dir
 
 # All Build rule for target.
-CMakeFiles/PokeMosaic.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target PokeMosaic"
-.PHONY : CMakeFiles/PokeMosaic.dir/all
+CMakeFiles/Mosaic.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Mosaic"
+.PHONY : CMakeFiles/Mosaic.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PokeMosaic.dir/rule: cmake_check_build_system
+CMakeFiles/Mosaic.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PokeMosaic.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Mosaic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles 0
-.PHONY : CMakeFiles/PokeMosaic.dir/rule
+.PHONY : CMakeFiles/Mosaic.dir/rule
 
 # Convenience name for target.
-PokeMosaic: CMakeFiles/PokeMosaic.dir/rule
-.PHONY : PokeMosaic
+Mosaic: CMakeFiles/Mosaic.dir/rule
+.PHONY : Mosaic
 
 # clean rule for target.
-CMakeFiles/PokeMosaic.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/clean
-.PHONY : CMakeFiles/PokeMosaic.dir/clean
+CMakeFiles/Mosaic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/clean
+.PHONY : CMakeFiles/Mosaic.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/PixelMatching.dir
+
+# All Build rule for target.
+CMakeFiles/PixelMatching.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target PixelMatching"
+.PHONY : CMakeFiles/PixelMatching.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/PixelMatching.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PixelMatching.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles 0
+.PHONY : CMakeFiles/PixelMatching.dir/rule
+
+# Convenience name for target.
+PixelMatching: CMakeFiles/PixelMatching.dir/rule
+.PHONY : PixelMatching
+
+# clean rule for target.
+CMakeFiles/PixelMatching.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/clean
+.PHONY : CMakeFiles/PixelMatching.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o.d"
   "CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o"
   "CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o.d"
+  "CMakeFiles/PokeMosaic.dir/src/PixelMatching.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/PixelMatching.cpp.o.d"
   "PokeMosaic"
   "PokeMosaic.pdb"
 )

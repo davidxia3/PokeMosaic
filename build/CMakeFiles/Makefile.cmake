@@ -53,5 +53,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/PokeMosaic.dir/DependInfo.cmake"
+  "CMakeFiles/Mosaic.dir/DependInfo.cmake"
+  "CMakeFiles/PixelMatching.dir/DependInfo.cmake"
   )

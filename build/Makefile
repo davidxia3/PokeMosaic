@@ -117,96 +117,145 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PokeMosaic
+# Target rules for targets named Mosaic
 
 # Build rule for target.
-PokeMosaic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PokeMosaic
-.PHONY : PokeMosaic
+Mosaic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mosaic
+.PHONY : Mosaic
 
 # fast build rule for target.
-PokeMosaic/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/build
-.PHONY : PokeMosaic/fast
+Mosaic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/build
+.PHONY : Mosaic/fast
 
-src/KDTree.o: src/KDTree.cpp.o
-.PHONY : src/KDTree.o
+#=============================================================================
+# Target rules for targets named PixelMatching
 
-# target to build an object file
-src/KDTree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o
-.PHONY : src/KDTree.cpp.o
+# Build rule for target.
+PixelMatching: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PixelMatching
+.PHONY : PixelMatching
 
-src/KDTree.i: src/KDTree.cpp.i
-.PHONY : src/KDTree.i
+# fast build rule for target.
+PixelMatching/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/build
+.PHONY : PixelMatching/fast
 
-# target to preprocess a source file
-src/KDTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.i
-.PHONY : src/KDTree.cpp.i
-
-src/KDTree.s: src/KDTree.cpp.s
-.PHONY : src/KDTree.s
-
-# target to generate assembly for a file
-src/KDTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.s
-.PHONY : src/KDTree.cpp.s
-
-src/KDTreeNode.o: src/KDTreeNode.cpp.o
-.PHONY : src/KDTreeNode.o
+include/KDTree.o: include/KDTree.cpp.o
+.PHONY : include/KDTree.o
 
 # target to build an object file
-src/KDTreeNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o
-.PHONY : src/KDTreeNode.cpp.o
+include/KDTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/KDTree.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/KDTree.cpp.o
+.PHONY : include/KDTree.cpp.o
 
-src/KDTreeNode.i: src/KDTreeNode.cpp.i
-.PHONY : src/KDTreeNode.i
+include/KDTree.i: include/KDTree.cpp.i
+.PHONY : include/KDTree.i
 
 # target to preprocess a source file
-src/KDTreeNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.i
-.PHONY : src/KDTreeNode.cpp.i
+include/KDTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/KDTree.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/KDTree.cpp.i
+.PHONY : include/KDTree.cpp.i
 
-src/KDTreeNode.s: src/KDTreeNode.cpp.s
-.PHONY : src/KDTreeNode.s
+include/KDTree.s: include/KDTree.cpp.s
+.PHONY : include/KDTree.s
 
 # target to generate assembly for a file
-src/KDTreeNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.s
-.PHONY : src/KDTreeNode.cpp.s
+include/KDTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/KDTree.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/KDTree.cpp.s
+.PHONY : include/KDTree.cpp.s
 
-src/Metadata.o: src/Metadata.cpp.o
-.PHONY : src/Metadata.o
+include/KDTreeNode.o: include/KDTreeNode.cpp.o
+.PHONY : include/KDTreeNode.o
 
 # target to build an object file
-src/Metadata.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o
-.PHONY : src/Metadata.cpp.o
+include/KDTreeNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/KDTreeNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/KDTreeNode.cpp.o
+.PHONY : include/KDTreeNode.cpp.o
 
-src/Metadata.i: src/Metadata.cpp.i
-.PHONY : src/Metadata.i
+include/KDTreeNode.i: include/KDTreeNode.cpp.i
+.PHONY : include/KDTreeNode.i
 
 # target to preprocess a source file
-src/Metadata.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.i
-.PHONY : src/Metadata.cpp.i
+include/KDTreeNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/KDTreeNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/KDTreeNode.cpp.i
+.PHONY : include/KDTreeNode.cpp.i
 
-src/Metadata.s: src/Metadata.cpp.s
-.PHONY : src/Metadata.s
+include/KDTreeNode.s: include/KDTreeNode.cpp.s
+.PHONY : include/KDTreeNode.s
 
 # target to generate assembly for a file
-src/Metadata.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.s
-.PHONY : src/Metadata.cpp.s
+include/KDTreeNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/KDTreeNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/KDTreeNode.cpp.s
+.PHONY : include/KDTreeNode.cpp.s
+
+include/Metadata.o: include/Metadata.cpp.o
+.PHONY : include/Metadata.o
+
+# target to build an object file
+include/Metadata.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/Metadata.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/Metadata.cpp.o
+.PHONY : include/Metadata.cpp.o
+
+include/Metadata.i: include/Metadata.cpp.i
+.PHONY : include/Metadata.i
+
+# target to preprocess a source file
+include/Metadata.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/Metadata.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/Metadata.cpp.i
+.PHONY : include/Metadata.cpp.i
+
+include/Metadata.s: include/Metadata.cpp.s
+.PHONY : include/Metadata.s
+
+# target to generate assembly for a file
+include/Metadata.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/Metadata.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/Metadata.cpp.s
+.PHONY : include/Metadata.cpp.s
+
+include/Pixel.o: include/Pixel.cpp.o
+.PHONY : include/Pixel.o
+
+# target to build an object file
+include/Pixel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/Pixel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/Pixel.cpp.o
+.PHONY : include/Pixel.cpp.o
+
+include/Pixel.i: include/Pixel.cpp.i
+.PHONY : include/Pixel.i
+
+# target to preprocess a source file
+include/Pixel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/Pixel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/Pixel.cpp.i
+.PHONY : include/Pixel.cpp.i
+
+include/Pixel.s: include/Pixel.cpp.s
+.PHONY : include/Pixel.s
+
+# target to generate assembly for a file
+include/Pixel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/include/Pixel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/include/Pixel.cpp.s
+.PHONY : include/Pixel.cpp.s
 
 src/Mosaic.o: src/Mosaic.cpp.o
 .PHONY : src/Mosaic.o
 
 # target to build an object file
 src/Mosaic.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/src/Mosaic.cpp.o
 .PHONY : src/Mosaic.cpp.o
 
 src/Mosaic.i: src/Mosaic.cpp.i
@@ -214,7 +263,7 @@ src/Mosaic.i: src/Mosaic.cpp.i
 
 # target to preprocess a source file
 src/Mosaic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/src/Mosaic.cpp.i
 .PHONY : src/Mosaic.cpp.i
 
 src/Mosaic.s: src/Mosaic.cpp.s
@@ -222,32 +271,32 @@ src/Mosaic.s: src/Mosaic.cpp.s
 
 # target to generate assembly for a file
 src/Mosaic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mosaic.dir/build.make CMakeFiles/Mosaic.dir/src/Mosaic.cpp.s
 .PHONY : src/Mosaic.cpp.s
 
-src/Pixel.o: src/Pixel.cpp.o
-.PHONY : src/Pixel.o
+src/PixelMatching.o: src/PixelMatching.cpp.o
+.PHONY : src/PixelMatching.o
 
 # target to build an object file
-src/Pixel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o
-.PHONY : src/Pixel.cpp.o
+src/PixelMatching.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/src/PixelMatching.cpp.o
+.PHONY : src/PixelMatching.cpp.o
 
-src/Pixel.i: src/Pixel.cpp.i
-.PHONY : src/Pixel.i
+src/PixelMatching.i: src/PixelMatching.cpp.i
+.PHONY : src/PixelMatching.i
 
 # target to preprocess a source file
-src/Pixel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.i
-.PHONY : src/Pixel.cpp.i
+src/PixelMatching.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/src/PixelMatching.cpp.i
+.PHONY : src/PixelMatching.cpp.i
 
-src/Pixel.s: src/Pixel.cpp.s
-.PHONY : src/Pixel.s
+src/PixelMatching.s: src/PixelMatching.cpp.s
+.PHONY : src/PixelMatching.s
 
 # target to generate assembly for a file
-src/Pixel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PokeMosaic.dir/build.make CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.s
-.PHONY : src/Pixel.cpp.s
+src/PixelMatching.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelMatching.dir/build.make CMakeFiles/PixelMatching.dir/src/PixelMatching.cpp.s
+.PHONY : src/PixelMatching.cpp.s
 
 # Help Target
 help:
@@ -257,22 +306,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... PokeMosaic"
-	@echo "... src/KDTree.o"
-	@echo "... src/KDTree.i"
-	@echo "... src/KDTree.s"
-	@echo "... src/KDTreeNode.o"
-	@echo "... src/KDTreeNode.i"
-	@echo "... src/KDTreeNode.s"
-	@echo "... src/Metadata.o"
-	@echo "... src/Metadata.i"
-	@echo "... src/Metadata.s"
+	@echo "... Mosaic"
+	@echo "... PixelMatching"
+	@echo "... include/KDTree.o"
+	@echo "... include/KDTree.i"
+	@echo "... include/KDTree.s"
+	@echo "... include/KDTreeNode.o"
+	@echo "... include/KDTreeNode.i"
+	@echo "... include/KDTreeNode.s"
+	@echo "... include/Metadata.o"
+	@echo "... include/Metadata.i"
+	@echo "... include/Metadata.s"
+	@echo "... include/Pixel.o"
+	@echo "... include/Pixel.i"
+	@echo "... include/Pixel.s"
 	@echo "... src/Mosaic.o"
 	@echo "... src/Mosaic.i"
 	@echo "... src/Mosaic.s"
-	@echo "... src/Pixel.o"
-	@echo "... src/Pixel.i"
-	@echo "... src/Pixel.s"
+	@echo "... src/PixelMatching.o"
+	@echo "... src/PixelMatching.i"
+	@echo "... src/PixelMatching.s"
 .PHONY : help
 
 
