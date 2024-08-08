@@ -1,1 +1,2 @@
-Makefile linguist-documentation
+Makefile linguist-vendored
+Makefile linguist-generated

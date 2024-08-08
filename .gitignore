@@ -6,4 +6,3 @@ filtered_images/*.png
 filtered_metadata/*.json
 output_images/*.png
 pixel_matches/*.bin
-build/
