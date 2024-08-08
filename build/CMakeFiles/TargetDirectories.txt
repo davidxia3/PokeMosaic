@@ -1,4 +1,0 @@
-/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles/Mosaic.dir
-/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles/PixelMatching.dir
-/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles/edit_cache.dir
-/Users/davidxia143/Documents/projects/PokeMosaic/build/CMakeFiles/rebuild_cache.dir
