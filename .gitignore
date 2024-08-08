@@ -7,4 +7,3 @@ filtered_metadata/*.json
 output_images/*.png
 pixel_matches/*.bin
 Makefile
-build/

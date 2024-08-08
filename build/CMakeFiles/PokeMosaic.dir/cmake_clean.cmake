@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/KDTree.cpp.o.d"
+  "CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/KDTreeNode.cpp.o.d"
+  "CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/Metadata.cpp.o.d"
+  "CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/Mosaic.cpp.o.d"
+  "CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/Pixel.cpp.o.d"
+  "CMakeFiles/PokeMosaic.dir/src/PixelMatching.cpp.o"
+  "CMakeFiles/PokeMosaic.dir/src/PixelMatching.cpp.o.d"
+  "PokeMosaic"
+  "PokeMosaic.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/PokeMosaic.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

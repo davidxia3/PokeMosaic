@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/Mosaic.dir/src/Mosaic.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/src/Mosaic.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/src/Mosaic.cpp",
+  "output": "CMakeFiles/Mosaic.dir/src/Mosaic.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/Mosaic.dir/include/Pixel.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/Pixel.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/Pixel.cpp",
+  "output": "CMakeFiles/Mosaic.dir/include/Pixel.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/Mosaic.dir/include/Metadata.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/Metadata.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/Metadata.cpp",
+  "output": "CMakeFiles/Mosaic.dir/include/Metadata.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/Mosaic.dir/include/KDTree.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/KDTree.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/KDTree.cpp",
+  "output": "CMakeFiles/Mosaic.dir/include/KDTree.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/Mosaic.dir/include/KDTreeNode.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/KDTreeNode.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/KDTreeNode.cpp",
+  "output": "CMakeFiles/Mosaic.dir/include/KDTreeNode.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PixelMatching.dir/include/Pixel.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/Pixel.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/Pixel.cpp",
+  "output": "CMakeFiles/PixelMatching.dir/include/Pixel.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PixelMatching.dir/include/Metadata.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/Metadata.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/Metadata.cpp",
+  "output": "CMakeFiles/PixelMatching.dir/include/Metadata.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PixelMatching.dir/include/KDTree.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/KDTree.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/KDTree.cpp",
+  "output": "CMakeFiles/PixelMatching.dir/include/KDTree.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PixelMatching.dir/include/KDTreeNode.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/include/KDTreeNode.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/include/KDTreeNode.cpp",
+  "output": "CMakeFiles/PixelMatching.dir/include/KDTreeNode.cpp.o"
+},
+{
+  "directory": "/Users/davidxia143/Documents/projects/PokeMosaic/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_1/include/opencv4 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/PixelMatching.dir/src/PixelMatching.cpp.o -c /Users/davidxia143/Documents/projects/PokeMosaic/src/PixelMatching.cpp",
+  "file": "/Users/davidxia143/Documents/projects/PokeMosaic/src/PixelMatching.cpp",
+  "output": "CMakeFiles/PixelMatching.dir/src/PixelMatching.cpp.o"
+}
+]
