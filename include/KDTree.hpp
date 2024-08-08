@@ -11,7 +11,6 @@ class KDTree {
         void insert(Metadata data);
         std::string findNearestNeighbor(const Pixel& query_pixel);
 
-        // Prevent copy construction and assignment
         KDTree(const KDTree&) = delete;
         KDTree& operator=(const KDTree&) = delete;
 

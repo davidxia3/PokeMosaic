@@ -13,9 +13,9 @@ void KDTree::clear(KDTreeNode* node) {
     if (node == nullptr) {
         return;
     }
-    clear(node->get_left());  // Clear left subtree
-    clear(node->get_right()); // Clear right subtree
-    delete node;         // Delete current node
+    clear(node->get_left()); 
+    clear(node->get_right());
+    delete node;       
 }
 
 KDTreeNode* KDTree::insert(KDTreeNode* node, Metadata data, int depth) {
@@ -23,7 +23,7 @@ KDTreeNode* KDTree::insert(KDTreeNode* node, Metadata data, int depth) {
         return new KDTreeNode(data);
     }
 
-    int dim = depth % 6; // 6 dimensions (3 means + 3 stds)
+    int dim = depth % 6; 
     double value_to_compare;
 
     if (dim == 0) {
@@ -69,14 +69,12 @@ void KDTree::nearestNeighbor(KDTreeNode* node, const Pixel query_pixel, int dept
         return;
     }
 
-    // Calculate distance between query pixel and node's mean RGB
     double mean_dist = euclideanDistance(node->get_metadata().get_mean_pixel(), query_pixel);
     double std_sum = sumOfStd(node->get_metadata().get_std_pixel());
     
-    double weight_mean = 0.7; // Example weight for mean distance
-    double weight_std = 0.3;  // Example weight for std deviation
+    double weight_mean = 0.9;
+    double weight_std = 0.1; 
     
-    // Normalize std_sum if needed (assuming std_sum is already in a comparable range)
     double std_sum_normalized = std_sum; 
 
     double weighted_distance = weight_mean * mean_dist + weight_std * std_sum_normalized;

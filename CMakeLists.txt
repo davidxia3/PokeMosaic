@@ -4,5 +4,8 @@ project(PokeMosaic)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(PokeMosaic src/Mosaic.cpp src/Pixel.cpp src/Metadata.cpp include/json.hpp src/KDTree.cpp src/KDTreeNode.cpp)
-target_link_libraries(PokeMosaic ${OpenCV_LIBS})
+add_executable(Mosaic src/Mosaic.cpp include/Pixel.cpp include/Metadata.cpp include/json.hpp include/KDTree.cpp include/KDTreeNode.cpp)
+target_link_libraries(Mosaic ${OpenCV_LIBS})
+
+add_executable(PixelMatching include/Pixel.cpp include/Metadata.cpp include/json.hpp include/KDTree.cpp include/KDTreeNode.cpp src/PixelMatching.cpp)
+target_link_libraries(PixelMatching ${OpenCV_LIBS})

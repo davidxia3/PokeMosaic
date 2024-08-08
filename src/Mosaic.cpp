@@ -1,18 +1,56 @@
 #include <opencv2/opencv.hpp>
-#include "KDTree.hpp"
-#include "../include/json.hpp"
+#include "../include/Pixel.hpp"
 #include <vector>
 #include <iostream>
 #include <fstream>
 #include <filesystem>
+#include <unordered_map>
+
+
+std::vector<std::vector<std::vector<std::string>>> loadPixelMatches(const std::string& filename) {
+    std::ifstream infile(filename, std::ios::binary);
+
+    size_t dim1, dim2, dim3;
+    infile.read(reinterpret_cast<char*>(&dim1), sizeof(dim1));
+    infile.read(reinterpret_cast<char*>(&dim2), sizeof(dim2));
+    infile.read(reinterpret_cast<char*>(&dim3), sizeof(dim3));
+
+    std::vector<std::vector<std::vector<std::string>>> pixel_matches(dim1, 
+        std::vector<std::vector<std::string>>(dim2, std::vector<std::string>(dim3)));
+
+    for (auto& layer : pixel_matches) {
+        for (auto& row : layer) {
+            for (auto& elem : row) {
+                size_t length;
+                infile.read(reinterpret_cast<char*>(&length), sizeof(length));
+                elem.resize(length);
+                infile.read(&elem[0], length);
+            }
+        }
+    }
+
+    infile.close();
+    return pixel_matches;
+}
+
 
 
 int main() {
-    cv::Mat image = cv::imread("../test_image.jpg", cv::IMREAD_COLOR);
+    std::string input_file = "shiny_charizard_sprite.png";
+    std::string pixel_match_save = "../pixel_matches/filtered_90-mean-10-std.bin";
+    std::string input_images = "../filtered_images/";
+
+    std::string input_folder = "../input_images/";
+    std::string output_folder = "../output_images/";
+
+    std::string input_path = input_folder + input_file;
+    std::string output_path = output_folder + input_file;
+
+
+    cv::Mat image = cv::imread(input_path, cv::IMREAD_COLOR);
 
     int width = image.cols;
     int height = image.rows;
-    int channels = image.channels();
 
     std::vector<std::vector<Pixel>> pixelList(height, std::vector<Pixel>(width));
 
@@ -24,48 +62,52 @@ int main() {
         }
     }
 
+    auto pixel_matches = loadPixelMatches(pixel_match_save);
 
-    const size_t MAX_SIZE = 18000;
-    Metadata metadataList[MAX_SIZE];
-    size_t count = 0;
-    for (const auto& entry : std::__fs::filesystem::directory_iterator("../image_metadata/")) {
-        if (entry.is_regular_file() && entry.path().extension() == ".json") {
-            if (count >= MAX_SIZE) {
-                break; 
-            }
 
-            std::string filePath = entry.path().string();
-            std::ifstream input_file(filePath);
-            if (!input_file.is_open()) {
-                continue; 
-            }
+    std::vector<std::vector<std::string>> outputList(height, std::vector<std::string>(width));
 
-            using json = nlohmann::json;
-            json j;
-            input_file >> j;
-
-            std::string id = j["id"];
-            double mr = j["mean_r"]; 
-            double mg = j["mean_g"];
-            double mb = j["mean_b"];
-            double sr = j["std_r"];
-            double sg = j["std_g"];
-            double sb = j["std_b"];
-            
-            metadataList[count++] = Metadata(id, mr, mg, mb, sr, sg, sb);
+    for (unsigned i=0;i<pixelList.size();i++) {
+        for (unsigned j=0;j<pixelList[i].size();j++) {
+            outputList[i][j] = pixel_matches[(int) pixelList[i][j].get_r()][(int) pixelList[i][j].get_g()][(int) pixelList[i][j].get_b()];
         }
     }
-    std::cout << count << std::endl;
-
-    std::cout << metadataList[0].get_id();
 
 
-    KDTree tree();
+    const size_t TILE_WIDTH = 245;
+    const size_t TILE_HEIGHT = 342;
+    const size_t IMAGE_WIDTH = width;
+    const size_t IMAGE_HEIGHT = height;
+
+    const size_t TOTAL_OUTPUT_LENGTH = IMAGE_WIDTH * IMAGE_HEIGHT * TILE_WIDTH * TILE_HEIGHT * 3;
+
+    std::vector<unsigned char> output_image(TOTAL_OUTPUT_LENGTH);
+
+    for (size_t r = 0; r < IMAGE_HEIGHT; r++) {
+        for (size_t c = 0; c < IMAGE_WIDTH; c++) {
+            std::string tile_id = outputList[r][c];
+            cv::Mat tile = cv::imread(input_images + tile_id + ".png", cv::IMREAD_COLOR);
+            for (size_t rr = 0; rr < TILE_HEIGHT; rr++) {
+                for (size_t cc = 0; cc < TILE_WIDTH; cc++) {
+                    size_t base_index = (r * TILE_HEIGHT + rr) * (IMAGE_WIDTH * TILE_WIDTH * 3) + (c * TILE_WIDTH + cc) * 3;
+
+                    cv::Vec3b pixel = tile.at<cv::Vec3b>(rr, cc);
+
+                    output_image[base_index] = pixel[0];
+                    output_image[base_index + 1] = pixel[1];
+                    output_image[base_index + 2] = pixel[2];
 
 
+                }
+            }
 
-    
+        }
 
- 
+
+    }
+
+    cv::Mat final_image(IMAGE_HEIGHT * TILE_HEIGHT, IMAGE_WIDTH * TILE_WIDTH, CV_8UC3, output_image.data());
+    cv::imwrite(output_path, final_image);
+  
     return 0;
 }
